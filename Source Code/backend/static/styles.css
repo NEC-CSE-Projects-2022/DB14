@@ -1,0 +1,99 @@
+body {
+  background-color: #f0f4f8;
+  color: #2d3748;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #2b6cb0;
+  margin-bottom: 10px;
+}
+
+.upload-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px dashed #cbd5e0;
+  border-radius: 12px;
+}
+
+#fileInput {
+  margin: 10px 0;
+}
+
+#preview {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #4299e1;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#predictions {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#predictions li {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+#predictions li.normal {
+  background-color: #48bb78;
+  color: white;
+}
+
+#predictions li.pneumonia {
+  background-color: #e53e3e;
+  color: white;
+}
+
+#predictions li.processing {
+  background-color: #4299e1;
+  color: white;
+}
+
+#predictions li.error {
+  background-color: #718096;
+  color: white;
+}
